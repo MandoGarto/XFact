@@ -1,25 +1,25 @@
-import { Zap, Users, Clock, Award } from "lucide-react";
+import { Zap, Shield, Clock, Users } from "lucide-react";
 
 const features = [
   {
     icon: Zap,
-    title: "Quick Delivery",
-    description: "Fast turnaround on all projects without compromising quality.",
+    title: "Γρήγορη παράδοση",
+    description: "Sites σε λίγες μέρες",
   },
   {
-    icon: Users,
-    title: "Human-Friendly",
-    description: "Clear communication designed for non-technical users.",
+    icon: Shield,
+    title: "Ασφάλεια & GDPR",
+    description: "Πρακτικές που προστατεύουν",
   },
   {
     icon: Clock,
-    title: "Ongoing Support",
-    description: "We're here when you need us with reliable maintenance packages.",
+    title: "Ταχύτητα",
+    description: "Βελτιστοποίηση φόρτωσης",
   },
   {
-    icon: Award,
-    title: "Quality Guaranteed",
-    description: "Modern standards with responsive design and SEO best practices.",
+    icon: Users,
+    title: "Υποστήριξη για όλους",
+    description: "Ακόμη και αν είσαι άσχετος",
   },
 ];
 
@@ -33,15 +33,15 @@ const WhyChooseSection = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4 animate-fade-up">
-              Why Choose Us
+              Γιατί εμάς
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 animate-fade-up delay-100">
-              Digital Solutions
+              Γιατί να επιλέξετε την
               <br />
-              <span className="text-gradient">Made Simple</span>
+              <span className="text-gradient">Garti Tech</span>
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8 animate-fade-up delay-200">
-              We believe technology should empower your business, not complicate it. Our approach focuses on practical solutions that work for you — not the other way around.
+              Συνδυάζουμε τεχνογνωσία, απλότητα και υποστήριξη — ώστε να επικεντρώνεστε στη δουλειά σας και όχι στην τεχνολογία.
             </p>
             
             <div className="grid sm:grid-cols-2 gap-6">
@@ -67,31 +67,12 @@ const WhyChooseSection = () => {
             <div className="relative rounded-2xl overflow-hidden glass p-8">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent" />
               <div className="relative z-10">
-                <div className="text-6xl font-bold text-gradient mb-4">5+</div>
-                <div className="text-xl font-semibold mb-2">Years of Experience</div>
-                <p className="text-muted-foreground">
-                  Helping businesses establish their digital presence with reliable, 
-                  accessible, and affordable solutions.
+                <div className="text-sm font-medium text-primary mb-2">Προτεινόμενο πακέτο</div>
+                <div className="text-2xl font-bold mb-4">Standard Website</div>
+                <p className="text-muted-foreground mb-6">
+                  Home + έως 7 σελίδες, βασικό SEO, hosting + SSL, 20 μέρες υποστήριξη
                 </p>
-                
-                <div className="mt-8 pt-6 border-t border-border/50">
-                  <div className="flex items-center gap-4">
-                    <div className="flex -space-x-3">
-                      {[1, 2, 3, 4].map((i) => (
-                        <div
-                          key={i}
-                          className="w-10 h-10 rounded-full bg-secondary border-2 border-background flex items-center justify-center"
-                        >
-                          <span className="text-xs font-medium">👤</span>
-                        </div>
-                      ))}
-                    </div>
-                    <div>
-                      <div className="font-semibold">50+ Clients</div>
-                      <div className="text-sm text-muted-foreground">Trust our services</div>
-                    </div>
-                  </div>
-                </div>
+                <div className="text-4xl font-bold text-gradient">Από 450€</div>
               </div>
             </div>
             
