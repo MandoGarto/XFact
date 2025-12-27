@@ -17,50 +17,54 @@ const HeroSection = () => {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8 animate-fade-up">
             <Sparkles className="w-4 h-4 text-primary" />
             <span className="text-sm font-medium text-foreground/80">
-              Practical Digital Solutions
+              Τεχνολογία στα μέτρα σου
             </span>
           </div>
 
           {/* Main headline */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 animate-fade-up delay-100">
-            Build Your Digital
+            Χτίζουμε αξιόπιστες ψηφιακές
             <br />
-            <span className="text-gradient">Presence with Ease</span>
+            <span className="text-gradient">λύσεις για επιχειρήσεις & ιδιώτες</span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-up delay-200">
-            We help small businesses, startups, and professionals get online and operate securely — without the technical complexity.
+            Από μοντέρνα websites και e-shops μέχρι IT υποστήριξη. Η Garti Tech σας δίνει λύσεις που απλά… δουλεύουν.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up delay-300">
             <Button variant="hero" size="xl" asChild>
               <a href="#contact">
-                Get Started
+                Ζήτα Προσφορά
                 <ArrowRight className="w-5 h-5" />
               </a>
             </Button>
             <Button variant="glass" size="xl" asChild>
               <a href="#services">
-                View Services
+                Δες Υπηρεσίες
               </a>
             </Button>
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-3 gap-8 mt-20 pt-10 border-t border-border/50 animate-fade-up delay-400">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-20 pt-10 border-t border-border/50 animate-fade-up delay-400">
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-gradient mb-2">100+</div>
-              <div className="text-sm text-muted-foreground">Projects Delivered</div>
+              <div className="text-2xl md:text-3xl font-bold text-gradient mb-2">24/7</div>
+              <div className="text-sm text-muted-foreground">υποστήριξη</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-gradient mb-2">50+</div>
-              <div className="text-sm text-muted-foreground">Happy Clients</div>
+              <div className="text-2xl md:text-3xl font-bold text-gradient mb-2">100%</div>
+              <div className="text-sm text-muted-foreground">ικανοποίηση*</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-gradient mb-2">5+</div>
-              <div className="text-sm text-muted-foreground">Years Experience</div>
+              <div className="text-2xl md:text-3xl font-bold text-gradient mb-2">Από 450€</div>
+              <div className="text-sm text-muted-foreground">πακέτα για κάθε ανάγκη</div>
+            </div>
+            <div>
+              <div className="text-2xl md:text-3xl font-bold text-gradient mb-2">Website • SEO</div>
+              <div className="text-sm text-muted-foreground">Έτοιμο για πωλήσεις & growth</div>
             </div>
           </div>
         </div>

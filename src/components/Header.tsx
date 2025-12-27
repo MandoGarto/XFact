@@ -6,9 +6,11 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { label: "Services", href: "#services" },
-    { label: "Pricing", href: "#pricing" },
-    { label: "Contact", href: "#contact" },
+    { label: "Σχετικά", href: "#services" },
+    { label: "Επικοινωνία", href: "#contact" },
+    { label: "Παροχές", href: "#services" },
+    { label: "Έργα", href: "#" },
+    { label: "FAQ", href: "#faq" },
   ];
 
   return (
@@ -21,7 +23,10 @@ const Header = () => {
               <div className="w-10 h-10 rounded-xl bg-gradient-primary flex items-center justify-center">
                 <span className="text-primary-foreground font-bold text-lg">G</span>
               </div>
-              <span className="font-bold text-xl">Garti Tech</span>
+              <div className="flex flex-col">
+                <span className="font-bold text-lg leading-tight">Garti Tech</span>
+                <span className="text-xs text-muted-foreground leading-tight">Τεχνολογία στα μέτρα σου</span>
+              </div>
             </a>
 
             {/* Desktop Navigation */}
@@ -40,7 +45,7 @@ const Header = () => {
             {/* CTA Button */}
             <div className="hidden md:block">
               <Button variant="hero" size="sm" asChild>
-                <a href="#contact">Get Started</a>
+                <a href="#contact">Επικοινωνία</a>
               </Button>
             </div>
 
@@ -76,7 +81,7 @@ const Header = () => {
             ))}
             <Button variant="hero" className="w-full" asChild>
               <a href="#contact" onClick={() => setIsMenuOpen(false)}>
-                Get Started
+                Επικοινωνία
               </a>
             </Button>
           </div>

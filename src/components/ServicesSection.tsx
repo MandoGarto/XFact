@@ -1,35 +1,30 @@
-import { Monitor, ShoppingCart, Wrench, Search, Shield, HeadphonesIcon } from "lucide-react";
+import { Monitor, ShoppingCart, Wrench, Search, Settings } from "lucide-react";
 
 const services = [
   {
     icon: Monitor,
-    title: "Website Creation",
-    description: "Modern, responsive websites optimized for performance and user experience.",
-  },
-  {
-    icon: ShoppingCart,
-    title: "E-Shop Development",
-    description: "Complete online stores with WooCommerce and payment integration.",
+    title: "Website Design",
+    description: "Responsive, γρήγορα sites ιδανικά για μικρές επιχειρήσεις και επαγγελματίες.",
   },
   {
     icon: Wrench,
     title: "IT Support",
-    description: "Setup, optimization, security, and troubleshooting for all your tech.",
+    description: "Καθαρή εγκατάσταση Windows, βελτιστοποίηση ταχύτητας και πλήρης προστασία από ιούς.",
   },
   {
     icon: Search,
     title: "SEO Services",
-    description: "Technical and on-page SEO to boost your organic visibility.",
+    description: "Τεχνικό & on-page SEO, ταχύτητα φόρτωσης και στρατηγική για περισσότερη οργανική επισκεψιμότητα.",
   },
   {
-    icon: Shield,
-    title: "Security & Maintenance",
-    description: "Backups, updates, security monitoring, and ongoing support.",
+    icon: ShoppingCart,
+    title: "E-Shop Development",
+    description: "WooCommerce e-shops με ασφαλείς πληρωμές, διαχείριση προϊόντων και SEO-friendly δομή.",
   },
   {
-    icon: HeadphonesIcon,
-    title: "Dedicated Support",
-    description: "Human-friendly communication for non-technical users.",
+    icon: Settings,
+    title: "Πακέτα Συντήρησης",
+    description: "Backups, updates, monitoring και υποστήριξη για να μη σπαταλάς χρόνο με τεχνικά θέματα.",
   },
 ];
 
@@ -39,14 +34,14 @@ const ServicesSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4 animate-fade-up">
-            Our Services
+            Υπηρεσίες
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 animate-fade-up delay-100">
-            Everything You Need to{" "}
-            <span className="text-gradient">Go Digital</span>
+            Όλα όσα χρειάζεστε για να{" "}
+            <span className="text-gradient">πάτε online</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto animate-fade-up delay-200">
-            From websites to IT support, we provide practical solutions that help your business thrive online.
+            Από websites μέχρι IT support, παρέχουμε πρακτικές λύσεις που βοηθούν την επιχείρησή σας να ευδοκιμήσει online.
           </p>
         </div>
 
