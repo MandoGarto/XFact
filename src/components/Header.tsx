@@ -9,7 +9,7 @@ const Header = () => {
     { label: "Σχετικά", href: "/about" },
     { label: "Επικοινωνία", href: "/#contact" },
     { label: "Παροχές", href: "/services" },
-    { label: "Έργα", href: "#" },
+    { label: "Έργα", href: "/projects" },
     { label: "FAQ", href: "/#faq" },
   ];
 
