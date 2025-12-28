@@ -7,7 +7,7 @@ const Header = () => {
 
   const navLinks = [
     { label: "Σχετικά", href: "/about" },
-    { label: "Επικοινωνία", href: "/#contact" },
+    { label: "Επικοινωνία", href: "/contact" },
     { label: "Παροχές", href: "/services" },
     { label: "Έργα", href: "/projects" },
     { label: "FAQ", href: "/#faq" },
