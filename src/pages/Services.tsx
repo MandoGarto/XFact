@@ -14,8 +14,12 @@ const websitePackages = [
       "Βασικό SEO",
       "Ταχύτητα φόρτωσης (basic)",
       "SSL + Hosting",
-      "Υποστήριξη εκκίνησης (10 ημέρες)",
     ],
+    optionalFeatures: [
+      { name: "Gallery / Portfolio", paid: true },
+      { name: "Backup Add-on", paid: true },
+    ],
+    supportNote: "10 ημέρες υποστήριξη",
     cta: "Ζήτα Προσφορά",
     popular: false,
   },
@@ -23,14 +27,15 @@ const websitePackages = [
     name: "Standard Website",
     price: "750 €",
     features: [
-      "Responsive design για όλες τις συσκευές",
+      "Πλήρως responsive ιστοσελίδα",
       "Home + έως 7 σελίδες",
       "Βελτιστοποίηση εικόνων & ταχύτητας",
       "Βασικό SEO",
-      "Gallery / Portfolio",
-      "Analytics + Search Console",
-      "Backups & ασφάλεια",
+      "Backups & Monitoring",
       "20 ημέρες υποστήριξη",
+    ],
+    optionalFeatures: [
+      { name: "Gallery / Portfolio", paid: false },
     ],
     cta: "Επιλογή Πακέτου",
     popular: true,
@@ -40,11 +45,12 @@ const websitePackages = [
     price: "1200 €",
     subtitle: "Ιδανικό για επιχειρήσεις με αυξημένες απαιτήσεις",
     features: [
+      "Πλήρως responsive ιστοσελίδα",
       "Home + έως 10 σελίδες υψηλής ποιότητας",
       "Full SEO (On-Page + Technical + Schema)",
       "Βελτιστοποίηση ταχύτητας (advanced)",
       "Πολυγλωσσικότητα (έως 2 γλώσσες)",
-      "Backups & firewall ασφάλεια",
+      "Backups & Monitoring",
       "Google Analytics + Search Console",
       "30 ημέρες υποστήριξη",
     ],
@@ -183,6 +189,25 @@ const Services = () => {
                       </span>
                     </li>
                   ))}
+                  {'optionalFeatures' in pkg && pkg.optionalFeatures && pkg.optionalFeatures.map((opt: { name: string; paid: boolean }) => (
+                    <li key={opt.name} className="flex items-start gap-2">
+                      <Check className="w-5 h-5 text-primary/50 shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">
+                        {opt.name}{" "}
+                        <span className={`text-xs ${opt.paid ? 'text-amber-500' : 'text-green-500'}`}>
+                          ({opt.paid ? 'προαιρετικό επί πληρωμή' : 'δωρεάν προαιρετικό'})
+                        </span>
+                      </span>
+                    </li>
+                  ))}
+                  {'supportNote' in pkg && pkg.supportNote && (
+                    <li className="flex items-start gap-2">
+                      <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">
+                        {pkg.supportNote}
+                      </span>
+                    </li>
+                  )}
                 </ul>
                 <Button
                   variant={pkg.popular ? "hero" : "glass"}
