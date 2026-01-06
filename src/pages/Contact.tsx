@@ -81,7 +81,7 @@ const Contact = () => {
 
                 <div className="space-y-6">
                   <a 
-                    href="tel:+302100000000" 
+                    href="tel:+306975523655" 
                     className="flex items-center gap-4 p-4 bg-card border border-border rounded-xl hover:border-primary/50 transition-colors group"
                   >
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
@@ -89,12 +89,12 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="text-sm text-muted-foreground">Τηλέφωνο</p>
-                      <p className="font-semibold text-foreground">+30 210 0000000</p>
+                      <p className="font-semibold text-foreground">+30 697 552 3655</p>
                     </div>
                   </a>
 
                   <a 
-                    href="mailto:info@garti.gr" 
+                    href="mailto:contact@garti.gr" 
                     className="flex items-center gap-4 p-4 bg-card border border-border rounded-xl hover:border-primary/50 transition-colors group"
                   >
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
@@ -102,10 +102,11 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="text-sm text-muted-foreground">Email</p>
-                      <p className="font-semibold text-foreground">info@garti.gr</p>
+                      <p className="font-semibold text-foreground">contact@garti.gr</p>
                     </div>
                   </a>
 
+                  {/* Address disabled - uncomment when ready
                   <div className="flex items-center gap-4 p-4 bg-card border border-border rounded-xl">
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                       <MapPin className="w-5 h-5 text-primary" />
@@ -115,9 +116,10 @@ const Contact = () => {
                       <p className="font-semibold text-foreground">Οδός Παράδειγμα 123, Αθήνα</p>
                     </div>
                   </div>
+                  */}
                 </div>
 
-                {/* Google Maps Embed */}
+                {/* Google Maps disabled - uncomment when ready
                 <div className="rounded-xl overflow-hidden border border-border h-64">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50466.05452728768!2d23.69651375!3d37.9838096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd1f067043f1%3A0x2736354576668ddd!2sAthens%2C%20Greece!5e0!3m2!1sen!2s!4v1635000000000!5m2!1sen!2s"
@@ -130,6 +132,7 @@ const Contact = () => {
                     title="Χάρτης τοποθεσίας"
                   />
                 </div>
+                */}
               </div>
 
               {/* Contact Form */}

@@ -1,16 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { useLocation } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
 
   const navLinks = [
     { label: "Σχετικά", href: "/about" },
     { label: "Επικοινωνία", href: "/contact" },
     { label: "Παροχές", href: "/services" },
     { label: "Έργα", href: "/projects" },
-    { label: "FAQ", href: "/#faq" },
+    ...(isHomePage ? [{ label: "FAQ", href: "/#faq" }] : []),
   ];
 
   return (
