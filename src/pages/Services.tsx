@@ -14,7 +14,7 @@ const websitePackages = [
       "Βασικό SEO",
       "Ταχύτητα φόρτωσης (basic)",
       "SSL + Hosting",
-      "10 ημέρες υποστήριξη",
+      "Υποστήριξη εκκίνησης (10 ημέρες)",
     ],
     cta: "Ζήτα Προσφορά",
     popular: false,
@@ -38,6 +38,7 @@ const websitePackages = [
   {
     name: "Pro Website",
     price: "1200 €",
+    subtitle: "Ιδανικό για επιχειρήσεις με αυξημένες απαιτήσεις",
     features: [
       "Home + έως 10 σελίδες υψηλής ποιότητας",
       "Full SEO (On-Page + Technical + Schema)",
@@ -52,7 +53,8 @@ const websitePackages = [
   },
   {
     name: "E-Shop",
-    price: "1000 – 2400 €",
+    price: "1000 - 2000 €",
+    priceNote: "Τελική τιμή ανάλογα με λειτουργίες & προϊόντα",
     features: [
       "WooCommerce με έως 40 προϊόντα",
       "Stripe / PayPal / Viva Wallet",
@@ -162,9 +164,15 @@ const Services = () => {
                 )}
                 <div className="text-center mb-6">
                   <h3 className="text-xl font-bold mb-2">{pkg.name}</h3>
+                  {'subtitle' in pkg && pkg.subtitle && (
+                    <p className="text-xs text-muted-foreground mb-2 italic">{pkg.subtitle}</p>
+                  )}
                   <div className="text-3xl font-bold text-gradient">
                     {pkg.price}
                   </div>
+                  {'priceNote' in pkg && pkg.priceNote && (
+                    <p className="text-xs text-muted-foreground mt-1">{pkg.priceNote}</p>
+                  )}
                 </div>
                 <ul className="space-y-3 mb-6">
                   {pkg.features.map((feature) => (
