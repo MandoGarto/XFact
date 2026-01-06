@@ -12,12 +12,12 @@ const websitePackages = [
       "Πλήρως responsive ιστοσελίδα",
       "Home + έως 3 σελίδες",
       "Βασικό SEO",
+      "Ασφαλής hosting με SSL",
       "Ταχύτητα φόρτωσης (basic)",
-      "SSL + Hosting",
     ],
     optionalFeatures: [
+      { name: "Backup Add-on", paid: true, paidLabel: "προαιρετικό, συνιστάται για την ασφάλεια του site σας" },
       { name: "Gallery / Portfolio", paid: true },
-      { name: "Backup Add-on", paid: true },
     ],
     supportNote: "10 ημέρες υποστήριξη",
     cta: "Ζήτα Προσφορά",
@@ -29,8 +29,9 @@ const websitePackages = [
     features: [
       "Πλήρως responsive ιστοσελίδα",
       "Home + έως 7 σελίδες",
-      "Βελτιστοποίηση εικόνων & ταχύτητας",
       "Βασικό SEO",
+      "Ασφαλής hosting με SSL",
+      "Βελτιστοποίηση εικόνων & ταχύτητας",
       "Backups & Monitoring",
       "20 ημέρες υποστήριξη",
     ],
@@ -42,16 +43,16 @@ const websitePackages = [
   },
   {
     name: "Pro Website",
-    price: "1200 €",
-    subtitle: "Ιδανικό για επιχειρήσεις με αυξημένες απαιτήσεις",
+    price: "1100 €",
+    priceNote: "Ιδανικό για επιχειρήσεις με αυξημένες απαιτήσεις",
     features: [
       "Πλήρως responsive ιστοσελίδα",
       "Home + έως 10 σελίδες υψηλής ποιότητας",
       "Full SEO (On-Page + Technical + Schema)",
+      "Ασφαλής hosting με SSL",
       "Βελτιστοποίηση ταχύτητας (advanced)",
       "Πολυγλωσσικότητα (έως 2 γλώσσες)",
       "Backups & Monitoring",
-      "Google Analytics + Search Console",
       "30 ημέρες υποστήριξη",
     ],
     cta: "Ζήτα Προσφορά",
@@ -72,6 +73,28 @@ const websitePackages = [
     ],
     cta: "Δημιούργησε το E-Shop",
     popular: false,
+  },
+];
+
+const packageAddons = [
+  {
+    packageName: "Basic Website",
+    addons: [
+      { name: "Gallery / Portfolio", price: "50€", included: false },
+      { name: "Backup Add-on", price: "30€", included: false },
+    ],
+  },
+  {
+    packageName: "Standard Website",
+    addons: [
+      { name: "Gallery / Portfolio", price: null, included: true },
+    ],
+  },
+  {
+    packageName: "Pro Website",
+    addons: [
+      { name: "Επιπλέον γλώσσες", price: "80€ / γλώσσα", included: false },
+    ],
   },
 ];
 
@@ -170,14 +193,11 @@ const Services = () => {
                 )}
                 <div className="text-center mb-6">
                   <h3 className="text-xl font-bold mb-2">{pkg.name}</h3>
-                  {'subtitle' in pkg && pkg.subtitle && (
-                    <p className="text-xs text-muted-foreground mb-2 italic">{pkg.subtitle}</p>
-                  )}
                   <div className="text-3xl font-bold text-gradient">
                     {pkg.price}
                   </div>
                   {'priceNote' in pkg && pkg.priceNote && (
-                    <p className="text-xs text-muted-foreground mt-1">{pkg.priceNote}</p>
+                    <p className="text-xs text-muted-foreground mt-1 italic">{pkg.priceNote}</p>
                   )}
                 </div>
                 <ul className="space-y-3 mb-6">
@@ -189,13 +209,13 @@ const Services = () => {
                       </span>
                     </li>
                   ))}
-                  {'optionalFeatures' in pkg && pkg.optionalFeatures && pkg.optionalFeatures.map((opt: { name: string; paid: boolean }) => (
+                  {'optionalFeatures' in pkg && pkg.optionalFeatures && pkg.optionalFeatures.map((opt: { name: string; paid: boolean; paidLabel?: string }) => (
                     <li key={opt.name} className="flex items-start gap-2">
                       <Check className="w-5 h-5 text-primary/50 shrink-0 mt-0.5" />
                       <span className="text-sm text-muted-foreground">
                         {opt.name}{" "}
                         <span className={`text-xs ${opt.paid ? 'text-amber-500' : 'text-green-500'}`}>
-                          ({opt.paid ? 'προαιρετικό επί πληρωμή' : 'δωρεάν προαιρετικό'})
+                          ({opt.paidLabel || (opt.paid ? 'προαιρετικό επί πληρωμή' : 'δωρεάν προαιρετικό')})
                         </span>
                       </span>
                     </li>
@@ -218,6 +238,43 @@ const Services = () => {
                 </Button>
               </div>
             ))}
+          </div>
+
+          {/* Package Add-ons Section */}
+          <div className="mt-16">
+            <h3 className="text-2xl font-bold text-center mb-8">
+              Προαιρετικές Επιλογές ανά Πακέτο
+            </h3>
+            <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              {packageAddons.map((pkg) => (
+                <div
+                  key={pkg.packageName}
+                  className="glass rounded-2xl p-6"
+                >
+                  <h4 className="text-lg font-semibold mb-4 text-center border-b border-border pb-3">
+                    {pkg.packageName}
+                  </h4>
+                  <ul className="space-y-3">
+                    {pkg.addons.map((addon) => (
+                      <li key={addon.name} className="flex items-center justify-between gap-2">
+                        <span className="text-sm text-muted-foreground">
+                          {addon.name}
+                        </span>
+                        {addon.included ? (
+                          <span className="text-xs font-medium text-green-500 bg-green-500/10 px-2 py-1 rounded">
+                            Δωρεάν
+                          </span>
+                        ) : (
+                          <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded">
+                            {addon.price}
+                          </span>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
