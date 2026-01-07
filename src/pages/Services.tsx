@@ -72,8 +72,8 @@ const packageAddons = [
   {
     packageName: "Basic Website",
     addons: [
-      { name: "Gallery / Portfolio", label: "επί πληρωμή", included: false },
-      { name: "Backup Add-on", label: "επί πληρωμή", included: false },
+      { name: "Gallery / Portfolio", label: "Επί πληρωμή", included: false },
+      { name: "Backup Add-on", label: "Επί πληρωμή", included: false },
     ],
   },
   {
@@ -85,7 +85,7 @@ const packageAddons = [
   {
     packageName: "Pro Website",
     addons: [
-      { name: "Επιπλέον γλώσσες", label: "επί πληρωμή", included: false },
+      { name: "Επιπλέον γλώσσες", label: "Επί πληρωμή", included: false },
     ],
   },
 ];
