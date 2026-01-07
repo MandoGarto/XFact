@@ -26,13 +26,13 @@ const ContactSection = () => {
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up delay-300">
                 <Button variant="hero" size="xl" asChild>
-                  <a href="https://garti.gr/contact">
+                  <a href="/contact">
                     Επικοινωνήστε μαζί μας
                     <ArrowRight className="w-5 h-5" />
                   </a>
                 </Button>
                 <Button variant="glass" size="xl" asChild>
-                  <a href="#services">
+                  <a href="/services">
                     Δείτε τα πακέτα
                   </a>
                 </Button>

@@ -60,7 +60,7 @@ const HeroSection = () => {
             </div>
             <div>
               <div className="text-2xl md:text-3xl font-bold text-gradient mb-2">Από 450€</div>
-              <div className="text-sm text-muted-foreground">πακέτα για κάθε ανάγκη</div>
+              <div className="text-sm text-muted-foreground">Responsive site έως 7 σελίδες με SEO, SSL hosting, υψηλή ταχύτητα & 20 ημέρες υποστήριξη</div>
             </div>
             <div>
               <div className="text-2xl md:text-3xl font-bold text-gradient mb-2">Website • SEO</div>
