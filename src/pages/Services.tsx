@@ -15,12 +15,8 @@ const websitePackages = [
       "Ασφαλής hosting με SSL",
       "Ταχύτητα φόρτωσης (basic)",
     ],
-    optionalFeatures: [
-      { name: "Backup Add-on", paid: true, paidLabel: "προαιρετικό, συνιστάται για την ασφάλεια του site σας" },
-      { name: "Gallery / Portfolio", paid: true },
-    ],
     supportNote: "10 ημέρες υποστήριξη",
-    cta: "Ζήτα Προσφορά",
+    cta: "Αγορά πακέτου",
     popular: false,
   },
   {
@@ -35,10 +31,7 @@ const websitePackages = [
       "Backups & Monitoring",
       "20 ημέρες υποστήριξη",
     ],
-    optionalFeatures: [
-      { name: "Gallery / Portfolio", paid: false },
-    ],
-    cta: "Επιλογή Πακέτου",
+    cta: "Αγορά πακέτου",
     popular: true,
   },
   {
@@ -48,14 +41,14 @@ const websitePackages = [
     features: [
       "Πλήρως responsive ιστοσελίδα",
       "Home + έως 10 σελίδες υψηλής ποιότητας",
-      "Full SEO (On-Page + Technical + Schema)",
+      "Full SEO",
       "Ασφαλής hosting με SSL",
-      "Βελτιστοποίηση ταχύτητας (advanced)",
+      "Βελτιστοποίηση εικόνων & ταχύτητας",
       "Πολυγλωσσικότητα (έως 2 γλώσσες)",
       "Backups & Monitoring",
       "30 ημέρες υποστήριξη",
     ],
-    cta: "Ζήτα Προσφορά",
+    cta: "Αγορά πακέτου",
     popular: false,
   },
   {
@@ -69,9 +62,8 @@ const websitePackages = [
       "Ταχύτητα φόρτωσης & optimized images",
       "Κουπόνια & προσφορές",
       "GDPR friendly",
-      "Εκπαίδευση διαχείρισης",
     ],
-    cta: "Δημιούργησε το E-Shop",
+    cta: "Αγορά πακέτου",
     popular: false,
   },
 ];
@@ -80,20 +72,20 @@ const packageAddons = [
   {
     packageName: "Basic Website",
     addons: [
-      { name: "Gallery / Portfolio", price: "50€", included: false },
-      { name: "Backup Add-on", price: "30€", included: false },
+      { name: "Gallery / Portfolio", label: "επί πληρωμή", included: false },
+      { name: "Backup Add-on", label: "επί πληρωμή", included: false },
     ],
   },
   {
     packageName: "Standard Website",
     addons: [
-      { name: "Gallery / Portfolio", price: null, included: true },
+      { name: "Gallery / Portfolio", label: null, included: true },
     ],
   },
   {
     packageName: "Pro Website",
     addons: [
-      { name: "Επιπλέον γλώσσες", price: "80€ / γλώσσα", included: false },
+      { name: "Επιπλέον γλώσσες", label: "επί πληρωμή", included: false },
     ],
   },
 ];
@@ -209,17 +201,6 @@ const Services = () => {
                       </span>
                     </li>
                   ))}
-                  {'optionalFeatures' in pkg && pkg.optionalFeatures && pkg.optionalFeatures.map((opt: { name: string; paid: boolean; paidLabel?: string }) => (
-                    <li key={opt.name} className="flex items-start gap-2">
-                      <Check className="w-5 h-5 text-primary/50 shrink-0 mt-0.5" />
-                      <span className="text-sm text-muted-foreground">
-                        {opt.name}{" "}
-                        <span className={`text-xs ${opt.paid ? 'text-amber-500' : 'text-green-500'}`}>
-                          ({opt.paidLabel || (opt.paid ? 'προαιρετικό επί πληρωμή' : 'δωρεάν προαιρετικό')})
-                        </span>
-                      </span>
-                    </li>
-                  ))}
                   {'supportNote' in pkg && pkg.supportNote && (
                     <li className="flex items-start gap-2">
                       <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
@@ -234,7 +215,7 @@ const Services = () => {
                   className="w-full"
                   asChild
                 >
-                  <a href="/#contact">{pkg.cta}</a>
+                  <a href="/contact">{pkg.cta}</a>
                 </Button>
               </div>
             ))}
@@ -265,8 +246,8 @@ const Services = () => {
                             Δωρεάν
                           </span>
                         ) : (
-                          <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded">
-                            {addon.price}
+                          <span className="text-xs font-medium text-amber-500 bg-amber-500/10 px-2 py-1 rounded">
+                            {addon.label}
                           </span>
                         )}
                       </li>
@@ -337,7 +318,7 @@ const Services = () => {
               βρούμε την καλύτερη λύση για εσένα.
             </p>
             <Button variant="hero" size="lg" asChild>
-              <a href="/#contact">Επικοινωνία</a>
+              <a href="/contact">Επικοινωνία</a>
             </Button>
           </div>
         </section>

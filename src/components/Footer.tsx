@@ -11,9 +11,9 @@ const Footer = () => {
 
   const links = [
     { label: "Αρχική", href: "/" },
-    { label: "Υπηρεσίες", href: "#services" },
-    { label: "FAQ", href: "#faq" },
-    { label: "Επικοινωνία", href: "#contact" },
+    { label: "Υπηρεσίες", href: "/services" },
+    { label: "FAQ", href: "/#faq" },
+    { label: "Επικοινωνία", href: "/contact" },
   ];
 
   return (
@@ -76,11 +76,11 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="mailto:info@garti.gr"
+                  href="mailto:contact@garti.gr"
                   className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
                   <Mail className="w-4 h-4" />
-                  info@garti.gr
+                  contact@garti.gr
                 </a>
               </li>
             </ul>
@@ -92,7 +92,7 @@ const Footer = () => {
             © {new Date().getFullYear()} Garti Tech Services. All rights reserved.
           </p>
           <p className="text-sm text-muted-foreground">
-            Made with ❤️ in Greece
+            GartiCode
           </p>
         </div>
       </div>

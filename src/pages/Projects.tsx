@@ -10,14 +10,14 @@ const projects = [
     description: "Custom WordPress site για εταιρεία ανακαινίσεων με gallery έργων και φόρμα οδηγού πελατών.",
     tags: ["WordPress", "Elementor", "SEO", "Performance"],
     link: "https://www.renovatech.gr/",
-    thumbnail: "" // Add your thumbnail URL here, e.g., "/images/renovatech-thumb.jpg"
+    favicon: "https://www.renovatech.gr/favicon.ico"
   },
   {
     title: "Baghetto — Streetfood Restaurant",
     description: "Κατασκευή Custom site, custom product pages, menu και responsive UX για κινητές συσκευές.",
     tags: ["Custom", "WordPress", "Elementor", "SEO", "Performance"],
     link: "https://baghetto.gr/",
-    thumbnail: "" // Add your thumbnail URL here, e.g., "/images/baghetto-thumb.jpg"
+    favicon: "https://baghetto.gr/favicon.ico"
   }
 ];
 
@@ -53,22 +53,23 @@ const Projects = () => {
                   key={index}
                   className="group bg-card border border-border rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
                 >
-                  {/* Thumbnail */}
-                  {project.thumbnail ? (
-                    <div className="aspect-video overflow-hidden">
+                  {/* Favicon/Thumbnail */}
+                  <div className="aspect-video bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
+                    {project.favicon ? (
                       <img 
-                        src={project.thumbnail} 
-                        alt={project.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        src={project.favicon} 
+                        alt={`${project.title} icon`}
+                        className="w-16 h-16 object-contain"
+                        onError={(e) => {
+                          e.currentTarget.style.display = 'none';
+                          e.currentTarget.nextElementSibling?.classList.remove('hidden');
+                        }}
                       />
-                    </div>
-                  ) : (
-                    <div className="aspect-video bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                      <span className="text-4xl font-bold text-primary/30">
-                        {project.title.charAt(0)}
-                      </span>
-                    </div>
-                  )}
+                    ) : null}
+                    <span className={`text-4xl font-bold text-primary/30 ${project.favicon ? 'hidden' : ''}`}>
+                      {project.title.charAt(0)}
+                    </span>
+                  </div>
                   
                   <div className="p-8">
                     <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
