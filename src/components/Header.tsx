@@ -9,16 +9,16 @@ const Header = () => {
   const isHomePage = location.pathname === "/";
 
   const navLinks = [
-    { label: "Σχετικά", href: "/about" },
-    { label: "Επικοινωνία", href: "/contact" },
-    { label: "Παροχές", href: "/services" },
-    { label: "Έργα", href: "/projects" },
+    { label: "About", href: "/about" },
+    { label: "Contact", href: "/contact" },
+    { label: "Services", href: "/services" },
+    { label: "Projects", href: "/projects" },
     ...(isHomePage ? [{ label: "FAQ", href: "/#faq" }] : []),
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50">
-      <div className="glass mx-4 mt-4 rounded-2xl">
+    <header className="fixed top-0 left-0 right-0 z-50 pt-2 md:pt-0">
+      <div className="glass mx-2 md:mx-4 mt-2 md:mt-4 rounded-xl md:rounded-2xl">
         <div className="container mx-auto px-4">
           <nav className="flex items-center justify-between h-16">
             {/* Logo */}
@@ -45,12 +45,6 @@ const Header = () => {
               ))}
             </div>
 
-            {/* CTA Button */}
-            <div className="hidden md:block">
-              <Button variant="hero" size="sm" asChild>
-                <a href="#contact">Επικοινωνία</a>
-              </Button>
-            </div>
 
             {/* Mobile Menu Button */}
             <button
@@ -82,11 +76,6 @@ const Header = () => {
                 {link.label}
               </a>
             ))}
-            <Button variant="hero" className="w-full" asChild>
-              <a href="#contact" onClick={() => setIsMenuOpen(false)}>
-                Επικοινωνία
-              </a>
-            </Button>
           </div>
         </div>
       )}
