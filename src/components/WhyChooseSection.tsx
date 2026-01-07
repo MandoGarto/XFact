@@ -33,7 +33,7 @@ const WhyChooseSection = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4 animate-fade-up">
-              Γιατί εμάς
+              Why Us
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 animate-fade-up delay-100">
               Γιατί να επιλέξετε την
@@ -70,7 +70,7 @@ const WhyChooseSection = () => {
                 <div className="text-sm font-medium text-primary mb-2">Προτεινόμενο πακέτο</div>
                 <div className="text-2xl font-bold mb-4">Standard Website</div>
                 <p className="text-muted-foreground mb-6">
-                  Home + έως 7 σελίδες, βασικό SEO, hosting + SSL, 20 μέρες υποστήριξη
+                  Responsive site έως 7 σελίδες με SEO, SSL hosting, υψηλή ταχύτητα & 20 ημέρες υποστήριξη
                 </p>
                 <div className="text-4xl font-bold text-gradient">Από 450€</div>
               </div>
