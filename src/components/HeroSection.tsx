@@ -36,39 +36,39 @@ const HeroSection = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up delay-300">
             <Button variant="hero" size="xl" asChild>
-              <a href="#contact">
-                Ζήτα Προσφορά
+              <a href="/contact">
+                Ζήτα Δωρεάν Προσφορά
                 <ArrowRight className="w-5 h-5" />
               </a>
             </Button>
             <Button variant="glass" size="xl" asChild>
-              <a href="#services">
-                Δες Υπηρεσίες
+              <a href="/services">
+                Δες Πακέτα & Τιμές
               </a>
             </Button>
           </div>
 
-          {/* Stats */}
+          {/* Social Proof Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 
 			gap-4 md:gap-6 
 			mt-12 md:mt-20 
 			pt-6 md:pt-10 
 			border-t border-border/50 animate-fade-up delay-400">
             <div>
-              <div className="text-2xl md:text-3xl font-bold text-gradient mb-2">24/7</div>
-              <div className="text-sm text-muted-foreground">υποστήριξη</div>
+              <div className="text-2xl md:text-3xl font-bold text-gradient mb-2">50+</div>
+              <div className="text-sm text-muted-foreground">Ολοκληρωμένα projects</div>
             </div>
             <div>
-              <div className="text-2xl md:text-3xl font-bold text-gradient mb-2">100%</div>
-              <div className="text-sm text-muted-foreground">ικανοποίηση*</div>
+              <div className="text-2xl md:text-3xl font-bold text-gradient mb-2">24h</div>
+              <div className="text-sm text-muted-foreground">Απάντηση σε αίτημα</div>
+            </div>
+            <div>
+              <div className="text-2xl md:text-3xl font-bold text-gradient mb-2">5★</div>
+              <div className="text-sm text-muted-foreground">Μέση βαθμολογία</div>
             </div>
             <div>
               <div className="text-2xl md:text-3xl font-bold text-gradient mb-2">Από 450€</div>
-              <div className="text-sm text-muted-foreground">Responsive site έως 7 σελίδες με SEO, SSL hosting, υψηλή ταχύτητα & 20 ημέρες υποστήριξη</div>
-            </div>
-            <div>
-              <div className="text-2xl md:text-3xl font-bold text-gradient mb-2">Website • SEO</div>
-              <div className="text-sm text-muted-foreground">Έτοιμο για πωλήσεις & growth</div>
+              <div className="text-sm text-muted-foreground">Πλήρες website</div>
             </div>
           </div>
         </div>
