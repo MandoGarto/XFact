@@ -71,12 +71,12 @@ const About = () => {
 
             {/* CTA */}
             <div className="text-center animate-fade-up delay-400">
-              <Button variant="hero" size="xl" asChild>
-                <a href="/#contact">
-                  Επικοινωνήστε μαζί μας
-                  <ArrowRight className="w-5 h-5" />
-                </a>
-              </Button>
+            <Button variant="hero" size="xl" asChild>
+              <a href="/contact">
+                Επικοινωνήστε μαζί μας
+                <ArrowRight className="w-5 h-5" />
+              </a>
+            </Button>
             </div>
           </div>
         </main>
