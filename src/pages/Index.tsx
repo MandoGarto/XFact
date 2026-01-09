@@ -12,13 +12,25 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Garti Tech — Website, IT Support, SEO & E-shops</title>
+        <title>Κατασκευή Ιστοσελίδων & E-shop | Garti Tech - Από 450€</title>
         <meta
           name="description"
-          content="Χτίζουμε αξιόπιστες ψηφιακές λύσεις για επιχειρήσεις & ιδιώτες. Από μοντέρνα websites και e-shops μέχρι IT υποστήριξη. Πακέτα από 450€."
+          content="Κατασκευή ιστοσελίδων από 450€, e-shop από 1000€ & IT υποστήριξη. 50+ ολοκληρωμένα projects. Δωρεάν εκτίμηση σε 24 ώρες."
         />
-        <meta name="keywords" content="web development, IT support, SEO, e-commerce, WooCommerce, website creation, Greece, κατασκευή ιστοσελίδων, eshop" />
+        <meta name="keywords" content="κατασκευή ιστοσελίδων, κατασκευή eshop, web design Ελλάδα, IT support, SEO, WooCommerce, website από 450 ευρώ" />
         <link rel="canonical" href="https://garti.gr" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Κατασκευή Ιστοσελίδων & E-shop | Garti Tech" />
+        <meta property="og:description" content="Κατασκευή ιστοσελίδων από 450€, e-shop από 1000€. Δωρεάν εκτίμηση σε 24 ώρες." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://garti.gr" />
+        <meta property="og:locale" content="el_GR" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Κατασκευή Ιστοσελίδων & E-shop | Garti Tech" />
+        <meta name="twitter:description" content="Κατασκευή ιστοσελίδων από 450€, e-shop από 1000€. Δωρεάν εκτίμηση." />
       </Helmet>
 
       <div className="min-h-screen bg-background">

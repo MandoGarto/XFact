@@ -2,16 +2,19 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "Η συνεργασία ήταν άψογη. Το site μας είναι λειτουργικό και όμορφο, όπως ακριβώς το φανταζόμασταν",
+    quote: "Μας έφτιαξαν το site σε 10 μέρες και η επικοινωνία ήταν συνεχής. Ό,τι ζητήσαμε, έγινε.",
     author: "Αντώνης Μ.",
+    role: "Ιδιοκτήτης καφέ",
   },
   {
-    quote: "Η ομάδα της Garti κατανοεί πραγματικά τις ανάγκες μας. Τα προβλήματα IT λύθηκαν γρήγορα και με σαφήνεια.",
+    quote: "Είχαμε πρόβλημα με τον server μας και μέσα σε 2 ώρες το είχαν λύσει. Πολύ γρήγορη ανταπόκριση.",
     author: "Ελένη Δ.",
+    role: "Διαχειρίστρια e-shop",
   },
   {
-    quote: "Η σελίδα μας δουλεύει τέλεια και η εμπειρία βελτιώθηκε πολύ",
+    quote: "Το site φορτώνει γρήγορα και δουλεύει σωστά σε κινητό. Αυτό ζητούσαμε.",
     author: "Νίκος Κ.",
+    role: "Freelancer",
   },
 ];
 
@@ -46,7 +49,10 @@ const TestimonialsSection = () => {
                     {testimonial.author.charAt(0)}
                   </span>
                 </div>
-                <span className="font-medium">{testimonial.author}</span>
+                <div>
+                  <span className="font-medium block">{testimonial.author}</span>
+                  <span className="text-xs text-muted-foreground">{testimonial.role}</span>
+                </div>
               </div>
             </div>
           ))}

@@ -27,16 +27,20 @@ const ContactSection = () => {
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up delay-300">
                 <Button variant="hero" size="xl" asChild>
                   <a href="/contact">
-                    Επικοινωνήστε μαζί μας
+                    Ζήτα Δωρεάν Εκτίμηση
                     <ArrowRight className="w-5 h-5" />
                   </a>
                 </Button>
                 <Button variant="glass" size="xl" asChild>
                   <a href="/services">
-                    Δείτε τα πακέτα
+                    Δες Πακέτα & Τιμές
                   </a>
                 </Button>
               </div>
+              
+              <p className="text-sm text-muted-foreground mt-6 animate-fade-up delay-400">
+                Απάντηση εντός 24 ωρών • Χωρίς δέσμευση
+              </p>
             </div>
           </div>
         </div>
