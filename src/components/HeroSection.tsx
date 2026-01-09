@@ -22,14 +22,14 @@ const HeroSection = () => {
           </div>
 
           {/* Main headline */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 animate-fade-up delay-100">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 animate-fade-up delay-100">
             Χτίζουμε αξιόπιστες ψηφιακές
-            <br />
+            <br className="hidden md:block" />
             <span className="text-gradient">λύσεις για επιχειρήσεις & ιδιώτες</span>
           </h1>
 
           {/* Subheadline */}
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-up delay-200">
+          <p className="text-base md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 md:mb-10 leading-relaxed animate-fade-up delay-200">
             Από μοντέρνα websites και e-shops μέχρι IT υποστήριξη. Η Garti Tech σας δίνει λύσεις που απλά… δουλεύουν.
           </p>
 
@@ -49,7 +49,11 @@ const HeroSection = () => {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-20 pt-10 border-t border-border/50 animate-fade-up delay-400">
+          <div className="grid grid-cols-2 md:grid-cols-4 
+			gap-4 md:gap-6 
+			mt-12 md:mt-20 
+			pt-6 md:pt-10 
+			border-t border-border/50 animate-fade-up delay-400">
             <div>
               <div className="text-2xl md:text-3xl font-bold text-gradient mb-2">24/7</div>
               <div className="text-sm text-muted-foreground">υποστήριξη</div>
