@@ -1,12 +1,12 @@
-import { Mail } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 
 const Footer = () => {
   const services = [
-    { label: "Website Design", href: "#services" },
-    { label: "E-Shop Development", href: "#services" },
-    { label: "IT Support", href: "#services" },
-    { label: "SEO Services", href: "#services" },
-    { label: "Πακέτα Συντήρησης", href: "#services" },
+    { label: "Website Design", href: "/services" },
+    { label: "E-Shop Development", href: "/services" },
+    { label: "IT Support", href: "/services" },
+    { label: "SEO Services", href: "/services" },
+    { label: "Πακέτα Συντήρησης", href: "/services" },
   ];
 
   const links = [
@@ -74,6 +74,15 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Επικοινωνία</h4>
             <ul className="space-y-3">
+              <li>
+                <a
+                  href="tel:+306975523655"
+                  className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <Phone className="w-4 h-4" />
+                  +30 697 552 3655
+                </a>
+              </li>
               <li>
                 <a
                   href="mailto:contact@garti.gr"

@@ -145,6 +145,7 @@ const Services = () => {
           name="description"
           content="Πακέτα υπηρεσιών ιστοσελίδων, e-shop και IT υποστήριξης. Από 450€ για websites, 1000€ για e-shops και 30€ για IT services."
         />
+        <link rel="canonical" href="https://garti.gr/services" />
       </Helmet>
 
       <Header />

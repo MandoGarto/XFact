@@ -64,6 +64,7 @@ const Contact = () => {
       <Helmet>
         <title>Επικοινωνία | Garti - Κατασκευή Ιστοσελίδων</title>
         <meta name="description" content="Επικοινωνήστε μαζί μας για κατασκευή ιστοσελίδων, e-shop και IT υπηρεσίες. Τηλέφωνο, email και φόρμα επικοινωνίας." />
+        <link rel="canonical" href="https://garti.gr/contact" />
       </Helmet>
       
       <Header />

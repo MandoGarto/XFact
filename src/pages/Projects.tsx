@@ -27,6 +27,7 @@ const Projects = () => {
       <Helmet>
         <title>Έργα | Garti - Portfolio Ιστοσελίδων</title>
         <meta name="description" content="Δείτε τα έργα μας - Custom ιστοσελίδες, WordPress sites, e-shops και web εφαρμογές που έχουμε δημιουργήσει." />
+        <link rel="canonical" href="https://garti.gr/projects" />
       </Helmet>
       
       <Header />
