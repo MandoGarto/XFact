@@ -12,7 +12,7 @@ const Index = () => {
   return (
     <>
       <Helmet>
-  <title>Κατασκευή Ιστοσελίδων & E-shop | Garti Tech</title>
+  <title>Garti Tech | Web Development & IT Support</title>
   <meta
     name="description"
     content="Δημιουργούμε μοντέρνες ιστοσελίδες και e-shop, παρέχουμε ολοκληρωμένη IT υποστήριξη και λύσεις cybersecurity. Δωρεάν εκτίμηση σε 24 ώρες για να αναπτύξεις την επιχείρησή σου online!"
@@ -24,7 +24,7 @@ const Index = () => {
   <link rel="canonical" href="https://garti.gr" />
 
   {/* Open Graph */}
-  <meta property="og:title" content="Κατασκευή Ιστοσελίδων & E-shop | Garti Tech" />
+  <meta property="og:title" content="Garti Tech | Web Development & IT Support" />
   <meta
     property="og:description"
     content="Αναβάθμισε την παρουσία της επιχείρησής σου με μοντέρνες ιστοσελίδες, e-shop και ολοκληρωμένες IT λύσεις. Ζήτα δωρεάν εκτίμηση σε 24 ώρες!"
@@ -35,7 +35,7 @@ const Index = () => {
 
   {/* Twitter */}
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Κατασκευή Ιστοσελίδων & E-shop | Garti Tech" />
+  <meta name="twitter:title" content="Garti Tech | Web Development & IT Support" />
   <meta
     name="twitter:description"
     content="Αναβάθμισε την παρουσία της επιχείρησής σου με ιστοσελίδες, e-shop και ολοκληρωμένη IT υποστήριξη. Δωρεάν εκτίμηση σε 24 ώρες!"
