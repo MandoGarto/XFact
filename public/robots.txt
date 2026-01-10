@@ -3,6 +3,13 @@
 User-agent: *
 Allow: /
 
+# Αποφυγή crawling σε ευαίσθητα directories
+Disallow: /admin/
+Disallow: /login/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /backup/
+
 # Sitemap για καλύτερο indexing
 Sitemap: https://garti.gr/sitemap.xml
 
