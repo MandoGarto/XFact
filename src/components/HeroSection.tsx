@@ -55,8 +55,8 @@ const HeroSection = () => {
 			pt-6 md:pt-10 
 			border-t border-border/50 animate-fade-up delay-400">
             <div>
-              <div className="text-2xl md:text-3xl font-bold text-gradient mb-2">50+</div>
-              <div className="text-sm text-muted-foreground">Ολοκληρωμένα projects</div>
+              <div className="text-2xl md:text-3xl font-bold text-gradient mb-2">SSL</div>
+              <div className="text-sm text-muted-foreground">& Hosting περιλαμβάνεται</div>
             </div>
             <div>
               <div className="text-2xl md:text-3xl font-bold text-gradient mb-2">24h</div>
