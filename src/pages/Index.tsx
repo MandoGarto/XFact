@@ -12,26 +12,35 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Κατασκευή Ιστοσελίδων & E-shop | Garti Tech - Από 450€</title>
-        <meta
-          name="description"
-          content="Κατασκευή ιστοσελίδων από 450€, e-shop από 1000€ & IT υποστήριξη. 50+ ολοκληρωμένα projects. Δωρεάν εκτίμηση σε 24 ώρες."
-        />
-        <meta name="keywords" content="κατασκευή ιστοσελίδων, κατασκευή eshop, web design Ελλάδα, IT support, SEO, WooCommerce, website από 450 ευρώ" />
-        <link rel="canonical" href="https://garti.gr" />
-        
-        {/* Open Graph */}
-        <meta property="og:title" content="Κατασκευή Ιστοσελίδων & E-shop | Garti Tech" />
-        <meta property="og:description" content="Κατασκευή ιστοσελίδων από 450€, e-shop από 1000€. Δωρεάν εκτίμηση σε 24 ώρες." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://garti.gr" />
-        <meta property="og:locale" content="el_GR" />
-        
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Κατασκευή Ιστοσελίδων & E-shop | Garti Tech" />
-        <meta name="twitter:description" content="Κατασκευή ιστοσελίδων από 450€, e-shop από 1000€. Δωρεάν εκτίμηση." />
-      </Helmet>
+  <title>Κατασκευή Ιστοσελίδων & E-shop | Garti Tech</title>
+  <meta
+    name="description"
+    content="Δημιουργούμε μοντέρνες ιστοσελίδες και e-shop, παρέχουμε ολοκληρωμένη IT υποστήριξη και λύσεις cybersecurity. Δωρεάν εκτίμηση σε 24 ώρες για να αναπτύξεις την επιχείρησή σου online!"
+  />
+  <meta
+    name="keywords"
+    content="κατασκευή ιστοσελίδων, κατασκευή eshop, web design Ελλάδα, IT support, cybersecurity, SEO, responsive website, digital solutions"
+  />
+  <link rel="canonical" href="https://garti.gr" />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="Κατασκευή Ιστοσελίδων & E-shop | Garti Tech" />
+  <meta
+    property="og:description"
+    content="Αναβάθμισε την παρουσία της επιχείρησής σου με μοντέρνες ιστοσελίδες, e-shop και ολοκληρωμένες IT λύσεις. Ζήτα δωρεάν εκτίμηση σε 24 ώρες!"
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://garti.gr" />
+  <meta property="og:locale" content="el_GR" />
+
+  {/* Twitter */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Κατασκευή Ιστοσελίδων & E-shop | Garti Tech" />
+  <meta
+    name="twitter:description"
+    content="Αναβάθμισε την παρουσία της επιχείρησής σου με ιστοσελίδες, e-shop και ολοκληρωμένη IT υποστήριξη. Δωρεάν εκτίμηση σε 24 ώρες!"
+  />
+</Helmet>
 
       <div className="min-h-screen bg-background">
         <Header />
