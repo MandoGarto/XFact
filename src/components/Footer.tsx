@@ -1,4 +1,5 @@
 import { Mail, Phone } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const services = [
@@ -22,7 +23,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="md:col-span-1">
-            <a href="/" className="flex items-center gap-2 mb-4">
+            <Link to="/" className="flex items-center gap-2 mb-4">
               <div className="w-10 h-10 rounded-xl bg-gradient-primary flex items-center justify-center">
                 <span className="text-primary-foreground font-bold text-lg">G</span>
               </div>
@@ -30,7 +31,7 @@ const Footer = () => {
                 <span className="font-bold text-xl">Garti Tech</span>
                 <span className="text-xs text-muted-foreground">Τεχνολογία στα μέτρα σου</span>
               </div>
-            </a>
+            </Link>
             <p className="text-muted-foreground text-sm leading-relaxed">
               Πρακτικές ψηφιακές λύσεις για επιχειρήσεις που θέλουν να ευδοκιμήσουν online.
             </p>
@@ -42,12 +43,12 @@ const Footer = () => {
             <ul className="space-y-3">
               {services.map((service) => (
                 <li key={service.label}>
-                  <a
-                    href={service.href}
+                  <Link
+                    to={service.href}
                     className="text-sm text-muted-foreground hover:text-primary transition-colors"
                   >
                     {service.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -59,12 +60,21 @@ const Footer = () => {
             <ul className="space-y-3">
               {links.map((link) => (
                 <li key={link.label}>
-                  <a
-                    href={link.href}
-                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    {link.label}
-                  </a>
+                  {link.href.startsWith("/#") ? (
+                    <a
+                      href={link.href}
+                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      {link.label}
+                    </a>
+                  ) : (
+                    <Link
+                      to={link.href}
+                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      {link.label}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>

@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Check, Monitor, Zap, Shield, Package } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const websitePackages = [
   {
@@ -216,7 +217,7 @@ const Services = () => {
                   className="w-full"
                   asChild
                 >
-                  <a href="/contact">{pkg.cta}</a>
+                  <Link to="/contact">{pkg.cta}</Link>
                 </Button>
               </div>
             ))}
@@ -319,7 +320,7 @@ const Services = () => {
               βρούμε την καλύτερη λύση για εσένα.
             </p>
             <Button variant="hero" size="lg" asChild>
-              <a href="/contact">Επικοινωνία</a>
+              <Link to="/contact">Επικοινωνία</Link>
             </Button>
           </div>
         </section>

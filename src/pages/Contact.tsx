@@ -132,8 +132,12 @@ const Contact = () => {
                 <h2 className="text-2xl font-bold text-foreground mb-6">
                   Φόρμα Επικοινωνίας
                 </h2>
-                <p className="text-muted-foreground mb-8">
+                <p className="text-muted-foreground mb-4">
                   Συμπληρώστε τη φόρμα και θα επικοινωνήσουμε μαζί σας σύντομα.
+                </p>
+                <p className="text-sm text-primary/80 mb-8 flex items-center gap-2">
+                  <span className="inline-block w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                  Συνήθως απαντάμε σε 2-4 ώρες
                 </p>
 
                 <form onSubmit={handleSubmit} className="space-y-6">
