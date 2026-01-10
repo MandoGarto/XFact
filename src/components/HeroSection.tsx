@@ -54,21 +54,21 @@ const HeroSection = () => {
 			mt-12 md:mt-20 
 			pt-6 md:pt-10 
 			border-t border-border/50 animate-fade-up delay-400">
-            <div>
-              <div className="text-2xl md:text-3xl font-bold text-gradient mb-2">SSL</div>
-              <div className="text-sm text-muted-foreground">& Hosting περιλαμβάνεται</div>
+			<div>
+              <div className="text-2xl md:text-3xl font-bold text-gradient mb-2">5★</div>
+              <div className="text-sm text-muted-foreground">Μέση βαθμολογία</div>
             </div>
-            <div>
+			<div>
               <div className="text-2xl md:text-3xl font-bold text-gradient mb-2">24h</div>
               <div className="text-sm text-muted-foreground">Απάντηση σε αίτημα</div>
             </div>
             <div>
-              <div className="text-2xl md:text-3xl font-bold text-gradient mb-2">5★</div>
-              <div className="text-sm text-muted-foreground">Μέση βαθμολογία</div>
-            </div>
+              <div className="text-2xl md:text-3xl font-bold text-gradient mb-2">Value Offer</div>
+              <div className="text-sm text-muted-foreground">Εξυπνα πακετα που συμφέρουν</div>
+            </div>            
             <div>
-              <div className="text-2xl md:text-3xl font-bold text-gradient mb-2">Από 450€</div>
-              <div className="text-sm text-muted-foreground">Πλήρες website</div>
+              <div className="text-2xl md:text-3xl font-bold text-gradient mb-2">Websites απο 450€</div>
+              <div className="text-sm text-muted-foreground">Πλήρες λειτουργικό και responsive</div>
             </div>
           </div>
         </div>
