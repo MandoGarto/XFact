@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const ContactSection = () => {
   return (
@@ -26,15 +27,15 @@ const ContactSection = () => {
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up delay-300">
                 <Button variant="hero" size="xl" asChild>
-                  <a href="/contact">
+                  <Link to="/contact">
                     Ζήτα Δωρεάν Εκτίμηση
                     <ArrowRight className="w-5 h-5" />
-                  </a>
+                  </Link>
                 </Button>
                 <Button variant="glass" size="xl" asChild>
-                  <a href="/services">
+                  <Link to="/services">
                     Δες Πακέτα & Τιμές
-                  </a>
+                  </Link>
                 </Button>
               </div>
               

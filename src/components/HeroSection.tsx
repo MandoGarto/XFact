@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -36,38 +37,34 @@ const HeroSection = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up delay-300">
             <Button variant="hero" size="xl" asChild>
-              <a href="/contact">
+              <Link to="/contact">
                 Ζήτα Δωρεάν Προσφορά
                 <ArrowRight className="w-5 h-5" />
-              </a>
+              </Link>
             </Button>
             <Button variant="glass" size="xl" asChild>
-              <a href="/services">
+              <Link to="/services">
                 Δες Πακέτα & Τιμές
-              </a>
+              </Link>
             </Button>
           </div>
 
           {/* Social Proof Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 
-			gap-4 md:gap-6 
-			mt-12 md:mt-20 
-			pt-6 md:pt-10 
-			border-t border-border/50 animate-fade-up delay-400">
-			<div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mt-12 md:mt-20 pt-6 md:pt-10 border-t border-border/50 animate-fade-up delay-400">
+            <div>
               <div className="text-2xl md:text-3xl font-bold text-gradient mb-2">5★</div>
               <div className="text-sm text-muted-foreground">Μέση βαθμολογία</div>
             </div>
-			<div>
+            <div>
               <div className="text-2xl md:text-3xl font-bold text-gradient mb-2">24h</div>
               <div className="text-sm text-muted-foreground">Απάντηση σε αίτημα</div>
             </div>
             <div>
               <div className="text-2xl md:text-3xl font-bold text-gradient mb-2">Value Offer</div>
-              <div className="text-sm text-muted-foreground">Εξυπνα πακετα που συμφέρουν</div>
-            </div>            
+              <div className="text-sm text-muted-foreground">Έξυπνα πακέτα που συμφέρουν</div>
+            </div>
             <div>
-              <div className="text-2xl md:text-3xl font-bold text-gradient mb-2">Websites απο 450€</div>
+              <div className="text-2xl md:text-3xl font-bold text-gradient mb-2">Websites από 450€</div>
               <div className="text-sm text-muted-foreground">Πλήρες λειτουργικό και responsive</div>
             </div>
           </div>
