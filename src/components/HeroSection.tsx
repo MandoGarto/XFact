@@ -24,8 +24,9 @@ const HeroSection = () => {
 
           {/* Main headline */}
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 animate-fade-up delay-100">
-            Χτίζουμε αξιόπιστες ψηφιακές
-            <br className="hidden md:block" />
+            Χτίζουμε αξιόπιστες
+            <br />
+            <span className="block">ψηφιακές </span>
             <span className="text-gradient">λύσεις για επιχειρήσεις & ιδιώτες</span>
           </h1>
 
