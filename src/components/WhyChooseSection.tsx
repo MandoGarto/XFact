@@ -32,15 +32,12 @@ const WhyChooseSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4 animate-fade-up">
-              Why Us
-            </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 animate-fade-up delay-100">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 animate-fade-up">
               Γιατί να επιλέξετε την
               <br />
               <span className="text-gradient">Garti Tech</span>
             </h2>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-8 animate-fade-up delay-200">
+            <p className="text-muted-foreground text-lg leading-relaxed mb-8 animate-fade-up delay-100">
               Συνδυάζουμε τεχνογνωσία, απλότητα και υποστήριξη — ώστε να επικεντρώνεστε στη δουλειά σας και όχι στην τεχνολογία.
             </p>
             

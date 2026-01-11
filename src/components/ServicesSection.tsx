@@ -33,14 +33,11 @@ const ServicesSection = () => {
     <section id="services" className="relative py-24 lg:py-32">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4 animate-fade-up">
-            Services
-          </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 animate-fade-up delay-100">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 animate-fade-up">
             Όλα όσα χρειάζεστε για να{" "}
             <span className="text-gradient">πάτε online</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto animate-fade-up delay-200">
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto animate-fade-up delay-100">
             Από websites μέχρι IT support, παρέχουμε πρακτικές λύσεις που βοηθούν την επιχείρησή σας να ευδοκιμήσει online.
           </p>
         </div>

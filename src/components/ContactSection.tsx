@@ -12,16 +12,12 @@ const ContactSection = () => {
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/5" />
             
             <div className="relative z-10 text-center">
-              <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4 animate-fade-up">
-                Contact
-              </span>
-              
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 animate-fade-up delay-100">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 animate-fade-up">
                 Έτοιμος να{" "}
                 <span className="text-gradient">ξεκινήσεις;</span>
               </h2>
               
-              <p className="text-muted-foreground text-lg max-w-xl mx-auto mb-10 animate-fade-up delay-200">
+              <p className="text-muted-foreground text-lg max-w-xl mx-auto mb-10 animate-fade-up delay-100">
                 Φτιάξε ένα website ή λύσε άμεσα το IT πρόβλημα που σε απασχολεί.
               </p>
 
