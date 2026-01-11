@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { useLocation, Link } from "react-router-dom";
+import Logo from "./Logo";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,10 +31,8 @@ const Header = () => {
         <div className="container mx-auto px-4">
           <nav className="flex items-center justify-between h-16">
             {/* Logo */}
-            <Link to="/" className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-xl bg-gradient-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">G</span>
-              </div>
+            <Link to="/" className="flex items-center gap-3 group">
+              <Logo className="w-10 h-10 transition-transform group-hover:scale-105" />
               <div className="flex flex-col">
                 <span className="font-bold text-lg leading-tight">Garti Tech</span>
                 <span className="text-xs text-muted-foreground leading-tight">Τεχνολογία στα μέτρα σου</span>
