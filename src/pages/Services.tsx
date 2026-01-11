@@ -309,21 +309,6 @@ const Services = () => {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="container mx-auto px-4 mt-20">
-          <div className="glass rounded-3xl p-8 md:p-12 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">
-              Έχεις ερωτήσεις;
-            </h2>
-            <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
-              Επικοινώνησε μαζί μας για να συζητήσουμε το project σου και να
-              βρούμε την καλύτερη λύση για εσένα.
-            </p>
-            <Button variant="hero" size="lg" asChild>
-              <Link to="/contact">Επικοινωνία</Link>
-            </Button>
-          </div>
-        </section>
       </main>
 
       <Footer />
