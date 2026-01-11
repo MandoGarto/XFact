@@ -137,7 +137,7 @@ const Contact = () => {
                 </p>
                 <p className="text-sm text-primary/80 mb-8 flex items-center gap-2">
                   <span className="inline-block w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                  Συνήθως απαντάμε σε 2-4 ώρες
+                  Συνήθως απαντάμε σε 3-5 ώρες
                 </p>
 
                 <form onSubmit={handleSubmit} className="space-y-6">
