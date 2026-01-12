@@ -7,30 +7,42 @@ import { Link } from "react-router-dom";
 
 const websitePackages = [
   {
-    name: "Basic Website",
+    name: "Starter Website",
     price: "450 €",
     features: [
       "Πλήρως responsive ιστοσελίδα",
       "Home + έως 3 σελίδες",
       "Βασικό SEO",
+      "Modern UI",
+      "Social links / CTA",
       "Ασφαλής hosting με SSL",
       "Ταχύτητα φόρτωσης (basic)",
+      "10 ημέρες υποστήριξη",
     ],
-    supportNote: "10 ημέρες υποστήριξη",
+    optionalAddons: [
+      { name: "Backup", paid: true },
+      { name: "Gallery", paid: true },
+      { name: "Contact form", paid: true },
+    ],
     cta: "Αγορά πακέτου",
     popular: false,
   },
   {
-    name: "Standard Website",
-    price: "750 €",
+    name: "Business Website",
+    price: "800 €",
     features: [
       "Πλήρως responsive ιστοσελίδα",
       "Home + έως 7 σελίδες",
-      "Βασικό SEO",
+      "Advanced SEO",
+      "Custom design",
+      "Performance optimization",
+      "Google Analytics / Search Console",
       "Ασφαλής hosting με SSL",
-      "Βελτιστοποίηση εικόνων & ταχύτητας",
       "Backups & Monitoring",
       "20 ημέρες υποστήριξη",
+    ],
+    optionalAddons: [
+      { name: "Gallery / Portfolio", paid: false },
     ],
     cta: "Αγορά πακέτου",
     popular: true,
@@ -49,6 +61,9 @@ const websitePackages = [
       "Backups & Monitoring",
       "30 ημέρες υποστήριξη",
     ],
+    optionalAddons: [
+      { name: "Επιπλέον γλώσσες", paid: true },
+    ],
     cta: "Αγορά πακέτου",
     popular: false,
   },
@@ -66,28 +81,6 @@ const websitePackages = [
     ],
     cta: "Αγορά πακέτου",
     popular: false,
-  },
-];
-
-const packageAddons = [
-  {
-    packageName: "Basic Website",
-    addons: [
-      { name: "Gallery / Portfolio", label: "Επί πληρωμή", included: false },
-      { name: "Backup Add-on", label: "Επί πληρωμή", included: false },
-    ],
-  },
-  {
-    packageName: "Standard Website",
-    addons: [
-      { name: "Gallery / Portfolio", label: null, included: true },
-    ],
-  },
-  {
-    packageName: "Pro Website",
-    addons: [
-      { name: "Επιπλέον γλώσσες", label: "Επί πληρωμή", included: false },
-    ],
   },
 ];
 
@@ -188,13 +181,14 @@ const Services = () => {
                 <div className="text-center mb-6">
                   <h3 className="text-xl font-bold mb-2">{pkg.name}</h3>
                   <div className="text-3xl font-bold text-gradient">
+                    <span className="text-sm font-normal text-muted-foreground">Από </span>
                     {pkg.price}
                   </div>
                   {'priceNote' in pkg && pkg.priceNote && (
                     <p className="text-xs text-muted-foreground mt-1 italic">{pkg.priceNote}</p>
                   )}
                 </div>
-                <ul className="space-y-3 mb-6">
+                <ul className="space-y-3 mb-4">
                   {pkg.features.map((feature) => (
                     <li key={feature} className="flex items-start gap-2">
                       <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
@@ -203,15 +197,31 @@ const Services = () => {
                       </span>
                     </li>
                   ))}
-                  {'supportNote' in pkg && pkg.supportNote && (
-                    <li className="flex items-start gap-2">
-                      <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                      <span className="text-sm text-muted-foreground">
-                        {pkg.supportNote}
-                      </span>
-                    </li>
-                  )}
                 </ul>
+                
+                {/* Optional Addons Section */}
+                {'optionalAddons' in pkg && pkg.optionalAddons && pkg.optionalAddons.length > 0 && (
+                  <div className="border-t border-border pt-4 mb-4">
+                    <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-3">Προαιρετικά</p>
+                    <ul className="space-y-2">
+                      {pkg.optionalAddons.map((addon: { name: string; paid: boolean }) => (
+                        <li key={addon.name} className="flex items-center justify-between gap-2">
+                          <span className="text-sm text-muted-foreground">{addon.name}</span>
+                          {addon.paid ? (
+                            <span className="text-xs font-medium text-amber-500 bg-amber-500/10 px-2 py-0.5 rounded">
+                              Επί πληρωμή
+                            </span>
+                          ) : (
+                            <span className="text-xs font-medium text-green-500 bg-green-500/10 px-2 py-0.5 rounded">
+                              Δωρεάν
+                            </span>
+                          )}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                
                 <Button
                   variant={pkg.popular ? "hero" : "glass"}
                   className="w-full"
@@ -221,43 +231,6 @@ const Services = () => {
                 </Button>
               </div>
             ))}
-          </div>
-
-          {/* Package Add-ons Section */}
-          <div className="mt-16">
-            <h3 className="text-2xl font-bold text-center mb-8">
-              Προαιρετικές Επιλογές ανά Πακέτο
-            </h3>
-            <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-              {packageAddons.map((pkg) => (
-                <div
-                  key={pkg.packageName}
-                  className="glass rounded-2xl p-6"
-                >
-                  <h4 className="text-lg font-semibold mb-4 text-center border-b border-border pb-3">
-                    {pkg.packageName}
-                  </h4>
-                  <ul className="space-y-3">
-                    {pkg.addons.map((addon) => (
-                      <li key={addon.name} className="flex items-center justify-between gap-2">
-                        <span className="text-sm text-muted-foreground">
-                          {addon.name}
-                        </span>
-                        {addon.included ? (
-                          <span className="text-xs font-medium text-green-500 bg-green-500/10 px-2 py-1 rounded">
-                            Δωρεάν
-                          </span>
-                        ) : (
-                          <span className="text-xs font-medium text-amber-500 bg-amber-500/10 px-2 py-1 rounded">
-                            {addon.label}
-                          </span>
-                        )}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
           </div>
         </section>
 
