@@ -9,10 +9,10 @@ const Header = () => {
   const isHomePage = location.pathname === "/";
 
   const navLinks = [
-    { label: "About", href: "/about" },
-    { label: "Contact", href: "/contact" },
-    { label: "Services", href: "/services" },
-    { label: "Projects", href: "/projects" },
+    { label: "Σχετικά", href: "/about" },
+    { label: "Επικοινωνία", href: "/contact" },
+    { label: "Υπηρεσίες", href: "/services" },
+    { label: "Portfolio", href: "/projects" },
     ...(isHomePage ? [{ label: "FAQ", href: "/#faq" }] : []),
   ];
 
