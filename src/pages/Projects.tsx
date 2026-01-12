@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import baghettoLogo from '@/assets/portfolio-baghetto.webp';
 
 const projects = [
   {
@@ -10,14 +11,14 @@ const projects = [
     description: "Custom WordPress site για εταιρεία ανακαινίσεων με gallery έργων και φόρμα οδηγού πελατών.",
     tags: ["WordPress", "Elementor", "SEO", "Performance"],
     link: "https://www.renovatech.gr/",
-    favicon: "https://www.renovatech.gr/favicon.ico"
+    image: "https://www.renovatech.gr/wp-content/uploads/2025/11/RenovatechLogo-300x98.png"
   },
   {
     title: "Baghetto — Streetfood Restaurant",
     description: "Κατασκευή Custom site, custom product pages, menu και responsive UX για κινητές συσκευές.",
     tags: ["Custom", "WordPress", "Elementor", "SEO", "Performance"],
     link: "https://baghetto.gr/",
-    favicon: "https://baghetto.gr/favicon.ico"
+    image: baghettoLogo
   }
 ];
 
@@ -54,20 +55,20 @@ const Projects = () => {
                   key={index}
                   className="group bg-card border border-border rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
                 >
-                  {/* Favicon/Thumbnail */}
-                  <div className="aspect-video bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                    {project.favicon ? (
-                      <img 
-                        src={project.favicon} 
-                        alt={`${project.title} icon`}
-                        className="w-16 h-16 object-contain"
-                        onError={(e) => {
-                          e.currentTarget.style.display = 'none';
-                          e.currentTarget.nextElementSibling?.classList.remove('hidden');
-                        }}
-                      />
-                    ) : null}
-                    <span className={`text-4xl font-bold text-primary/30 ${project.favicon ? 'hidden' : ''}`}>
+                  {/* Project Image */}
+                  <div className="aspect-video bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center p-6">
+                    <img 
+                      src={project.image} 
+                      alt={`${project.title} logo`}
+                      className="max-w-full max-h-full object-contain"
+                      onError={(e) => {
+                        e.currentTarget.style.display = 'none';
+                        if (e.currentTarget.nextElementSibling) {
+                          (e.currentTarget.nextElementSibling as HTMLElement).classList.remove('hidden');
+                        }
+                      }}
+                    />
+                    <span className="hidden text-4xl font-bold text-primary/30">
                       {project.title.charAt(0)}
                     </span>
                   </div>
