@@ -26,6 +26,7 @@ const websitePackages = [
       { name: "Multilingual setup", paid: true },
     ],
     cta: "Αγορά πακέτου",
+    stripeLink: "https://buy.stripe.com/6oU4gB0jtgOyeoCajqeUU00",
     popular: false,
   },
   {
@@ -48,6 +49,7 @@ const websitePackages = [
       { name: "Multilingual setup", paid: true },
     ],
     cta: "Αγορά πακέτου",
+    stripeLink: "https://buy.stripe.com/eVqcN71nxfKufsGdvCeUU01",
     popular: true,
   },
   {
@@ -69,6 +71,7 @@ const websitePackages = [
       { name: "Multilingual setup", paid: true },
     ],
     cta: "Αγορά πακέτου",
+    stripeLink: "https://buy.stripe.com/dRmdRb1nx55Qa8mbnueUU02",
     popular: false,
   },
   {
@@ -231,7 +234,11 @@ const Services = () => {
                   className="w-full"
                   asChild
                 >
-                  <Link to="/contact">{pkg.cta}</Link>
+                  {'stripeLink' in pkg && pkg.stripeLink ? (
+                    <a href={pkg.stripeLink} target="_blank" rel="noopener noreferrer">{pkg.cta}</a>
+                  ) : (
+                    <Link to="/contact">{pkg.cta}</Link>
+                  )}
                 </Button>
               </div>
             ))}
