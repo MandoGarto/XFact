@@ -1,6 +1,7 @@
 import { Mail, Phone, ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import Logo from "./Logo";
+import TrustBadges from "./TrustBadges";
 
 const Footer = () => {
   const services = [
@@ -24,6 +25,8 @@ const Footer = () => {
       <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-accent/5 rounded-full blur-3xl" />
       
       <div className="container mx-auto px-4 relative z-10">
+        {/* Trust Badges */}
+        <TrustBadges />
         {/* Top section with logo */}
         <div className="flex items-center gap-4 mb-16 pb-12 border-b border-border/50">
           <Logo className="w-14 h-14" />
