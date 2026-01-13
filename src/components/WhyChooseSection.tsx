@@ -69,7 +69,7 @@ const WhyChooseSection = () => {
                 <p className="text-muted-foreground mb-6">
                   Responsive site έως 7 σελίδες με SEO, SSL hosting, υψηλή ταχύτητα & 20 ημέρες υποστήριξη
                 </p>
-                <div className="text-4xl font-bold text-gradient">750€</div>
+                <div className="text-4xl font-bold text-gradient">800€</div>
               </div>
             </div>
             
