@@ -247,30 +247,27 @@ const Services = () => {
           {/* Payment Methods Section */}
           <div className="mt-12 text-center">
             <div className="glass rounded-2xl p-6 max-w-2xl mx-auto">
-              <h3 className="text-lg font-semibold mb-4 flex items-center justify-center gap-2 flex-wrap">
-                <span>Πληρωμές:</span>
-                <span className="flex items-center gap-3 text-muted-foreground">
-                  <span className="flex items-center gap-1">
-                    <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="5" width="20" height="14" rx="2" stroke="currentColor" strokeWidth="1.5" fill="none"/><line x1="2" y1="10" x2="22" y2="10" stroke="currentColor" strokeWidth="1.5"/></svg>
-                    Κάρτα
-                  </span>
-                  <span className="text-muted-foreground/50">·</span>
-                  <span className="flex items-center gap-1">
-                    <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
-                    Apple Pay
-                  </span>
-                  <span className="text-muted-foreground/50">·</span>
-                  <span className="flex items-center gap-1">
-                    <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg>
-                    Google Pay
-                  </span>
-                  <span className="text-muted-foreground/50">·</span>
-                  <span className="flex items-center gap-1">
-                    <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                    Μετρητά
-                  </span>
+              <div className="flex items-center justify-center gap-4 md:gap-6 flex-wrap mb-4">
+                <span className="flex items-center gap-2 text-muted-foreground">
+                  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="5" width="20" height="14" rx="2" stroke="currentColor" strokeWidth="1.5" fill="none"/><line x1="2" y1="10" x2="22" y2="10" stroke="currentColor" strokeWidth="1.5"/></svg>
+                  Κάρτα
                 </span>
-              </h3>
+                <span className="text-muted-foreground/50">·</span>
+                <span className="flex items-center gap-2 text-muted-foreground">
+                  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                  Apple Pay
+                </span>
+                <span className="text-muted-foreground/50">·</span>
+                <span className="flex items-center gap-2 text-muted-foreground">
+                  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg>
+                  Google Pay
+                </span>
+                <span className="text-muted-foreground/50">·</span>
+                <span className="flex items-center gap-2 text-muted-foreground">
+                  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 10h20M6 16h4"/></svg>
+                  Μετρητά
+                </span>
+              </div>
               <p className="text-sm text-muted-foreground">
                 Online πληρωμές μέσω <span className="font-medium text-primary">Stripe</span> · Μετρητά μόνο δια ζώσης
               </p>
