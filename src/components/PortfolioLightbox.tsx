@@ -46,6 +46,7 @@ const PortfolioLightbox = ({ project, isOpen, onClose }: PortfolioLightboxProps)
               <button
                 onClick={onClose}
                 className="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-background/80 backdrop-blur-sm flex items-center justify-center text-foreground hover:bg-background transition-colors"
+                aria-label="Κλείσιμο"
               >
                 <X className="w-5 h-5" />
               </button>

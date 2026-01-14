@@ -46,6 +46,7 @@ const CookieConsent = () => {
                   <button 
                     onClick={handleDecline}
                     className="text-muted-foreground hover:text-foreground transition-colors"
+                    aria-label="Κλείσιμο"
                   >
                     <X className="w-4 h-4" />
                   </button>
