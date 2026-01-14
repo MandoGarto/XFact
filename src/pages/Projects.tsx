@@ -10,15 +10,15 @@ import baghettoLogo from '@/assets/portfolio-baghetto.webp';
 
 const projects = [
   {
-    title: "Renova Tech — Constructions",
-    description: "Custom WordPress site για εταιρεία ανακαινίσεων με gallery έργων και φόρμα οδηγού πελατών.",
+    title: "RenovaTech — Οικοδομικές Εργασίες",
+    description: "Ιστοσελίδα για εταιρεία ανακαινίσεων και κατασκευών. Περιλαμβάνει gallery έργων, υπηρεσίες (μερεμέτια, ελαιοχρωματισμοί, κατασκευές) και φόρμα επικοινωνίας για προσφορές.",
     tags: ["WordPress", "Elementor", "SEO", "Performance"],
     link: "https://www.renovatech.gr/",
     image: "https://www.renovatech.gr/wp-content/uploads/2025/11/RenovatechLogo-300x98.png"
   },
   {
-    title: "Baghetto — Streetfood Restaurant",
-    description: "Κατασκευή Custom site, custom product pages, menu και responsive UX για κινητές συσκευές.",
+    title: "Baghetto — Street Food",
+    description: "Ιστοσελίδα για street food εστιατόριο στη Θεσσαλονίκη. Μοντέρνο design με ψηφιακό μενού, τοποθεσία και ώρες λειτουργίας. Responsive για κινητά.",
     tags: ["Custom", "WordPress", "Elementor", "SEO", "Performance"],
     link: "https://baghetto.gr/",
     image: baghettoLogo
@@ -92,7 +92,7 @@ const Projects = () => {
                     <img 
                       src={project.image} 
                       alt={`${project.title} logo`}
-                      className="max-w-full max-h-full object-contain transition-transform duration-300 group-hover:scale-110"
+                      className="max-w-full max-h-full object-contain"
                       onError={(e) => {
                         e.currentTarget.style.display = 'none';
                         if (e.currentTarget.nextElementSibling) {
@@ -103,10 +103,6 @@ const Projects = () => {
                     <span className="hidden text-4xl font-bold text-primary/30">
                       {project.title.charAt(0)}
                     </span>
-                    {/* Zoom overlay */}
-                    <div className="absolute inset-0 bg-background/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                      <ZoomIn className="w-10 h-10 text-primary" />
-                    </div>
                   </div>
                   
                   <div className="p-8">

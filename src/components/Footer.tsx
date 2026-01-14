@@ -30,10 +30,7 @@ const Footer = () => {
         {/* Top section with logo */}
         <div className="flex items-center gap-4 mb-16 pb-12 border-b border-border/50">
           <Logo className="w-14 h-14" />
-          <div>
-            <h3 className="text-2xl font-bold">Garti Tech</h3>
-            <p className="text-muted-foreground">Τεχνολογία στα μέτρα σου</p>
-          </div>
+          <p className="text-muted-foreground">Τεχνολογία στα μέτρα σου</p>
         </div>
 
         {/* Main grid */}
@@ -102,7 +99,7 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-border/50 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Garti Tech Services. All rights reserved.
+            © {new Date().getFullYear()} Garti Tech Services.
           </p>
           <p className="text-sm text-muted-foreground font-medium">
             GartiCode

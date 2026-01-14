@@ -2,10 +2,10 @@ import { motion } from 'framer-motion';
 import { Shield, Zap, Award, HeartHandshake } from 'lucide-react';
 
 const badges = [
-  { icon: Shield, label: 'SSL Secured' },
-  { icon: Zap, label: 'Fast Delivery' },
-  { icon: Award, label: 'Quality Work' },
-  { icon: HeartHandshake, label: 'Client Focused' },
+  { icon: Shield, label: 'Ασφαλής Σύνδεση SSL' },
+  { icon: Zap, label: 'Γρήγορη Παράδοση' },
+  { icon: Award, label: 'Ποιοτική Εργασία' },
+  { icon: HeartHandshake, label: 'Εστίαση στον Πελάτη' },
 ];
 
 const TrustBadges = () => {
