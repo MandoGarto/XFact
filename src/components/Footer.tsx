@@ -1,7 +1,6 @@
 import { Mail, Phone, ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import Logo from "./Logo";
-import TrustBadges from "./TrustBadges";
 
 const Footer = () => {
   const services = [
