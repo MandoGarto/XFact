@@ -25,7 +25,7 @@ const projects = [
     image: baghettoLogo
   },
   {
-    title: "Kitchen Club — Culinary Experience & Events",
+    title: "Kitchen Club — Brunch & Culinary Experience",
     description: "Ιστοσελίδα για γαστρονομικές εμπειρίες και events στην Καβάλα. Περιλαμβάνει εμπειρίες γευσιγνωσίας, μαθήματα μαγειρικής, θεματικές βραδιές και catering υπηρεσίες.",
     tags: ["Custom", "SEO", "Performance"],
     link: "https://kitchenclub.gr/",
