@@ -66,7 +66,7 @@ const HeroSection = () => {
             </div>
             <div>
               <div className="text-2xl md:text-3xl font-bold text-gradient mb-2">Websites από 450€</div>
-              <div className="text-sm text-muted-foreground">Πλήρες λειτουργικό και responsive</div>
+              
             </div>
           </div>
         </div>
