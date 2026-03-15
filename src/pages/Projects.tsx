@@ -7,6 +7,7 @@ import { ExternalLink, ZoomIn } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import PortfolioLightbox from '@/components/PortfolioLightbox';
 import baghettoLogo from '@/assets/portfolio-baghetto.webp';
+import kitchenclubLogo from '@/assets/portfolio-kitchenclub.png';
 
 const projects = [
   {
@@ -18,10 +19,17 @@ const projects = [
   },
   {
     title: "Baghetto — Street Food",
-    description: "Ιστοσελίδα για street food εστιατόριο στη Θεσσαλονίκη. Μοντέρνο design με ψηφιακό μενού, τοποθεσία και ώρες λειτουργίας. Responsive για κινητά.",
+    description: "Ιστοσελίδα για street food μαγαζί στην Καβάλα. Μοντέρνο design με ψηφιακό μενού, τοποθεσία και ώρες λειτουργίας. Responsive για κινητά.",
     tags: ["Custom", "WordPress", "Elementor", "SEO", "Performance"],
     link: "https://baghetto.gr/",
     image: baghettoLogo
+  },
+  {
+    title: "Kitchen Club — Culinary Experience & Events",
+    description: "Ιστοσελίδα για γαστρονομικές εμπειρίες και events στην Καβάλα. Περιλαμβάνει εμπειρίες γευσιγνωσίας, μαθήματα μαγειρικής, θεματικές βραδιές και catering υπηρεσίες.",
+    tags: ["Custom", "SEO", "Performance"],
+    link: "https://kitchenclub.gr/",
+    image: kitchenclubLogo
   }
 ];
 
